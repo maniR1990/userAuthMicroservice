@@ -4,7 +4,13 @@
   "description": "microservice built for authentication. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/main.ts",
+    "build": "esbuild src/main.ts --bundle --platform=node --target=node20 --outfile=dist/main.js",
+    "start": "node dist/main.js",
+    "migrate": "prisma migrate dev --name init",
+    "generate": "prisma generate",
+    "test": "vitest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",

@@ -1,28 +1,61 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+###############################################################################
+#  Node & TypeScript                                                          #
+###############################################################################
+node_modules/
+dist/                         # esbuild output
+build/
+*.tsbuildinfo                 # TS incremental cache
 
-# dependencies
-node_modules
-/.pnp
-.pnp.js
+###############################################################################
+#  Logs & debug dumps                                                         #
+###############################################################################
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# testing
-coverage
-
-# production
-build
-
-# misc
-.DS_Store
+###############################################################################
+#  Environment variables / secrets                                            #
+###############################################################################
 .env
+.env.*.local
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+###############################################################################
+#  Prisma                                                                    #
+#  – keep schema.prisma & migrations, ignore generated + dev SQLite files     #
+###############################################################################
+.prisma/
+prisma/dev.db
+prisma/dev.sqlite
 
-/generated/prisma
-nodemon.json
-pm2.json
+###############################################################################
+#  Coverage & testing artifacts                                               #
+###############################################################################
+coverage/
+.nyc_output/
+
+###############################################################################
+#  Husky / lint                                                               #
+###############################################################################
+.eslintcache
+
+###############################################################################
+#  IDE & OS cruft                                                             #
+###############################################################################
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+###############################################################################
+#  Docker local volumes (optional)                                            #
+###############################################################################
+docker/data/
