@@ -1,4 +1,4 @@
-# UserAuth Microservice
+# UserAuth
 
 Fastify-based authentication service.
 
