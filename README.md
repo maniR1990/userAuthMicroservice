@@ -1,4 +1,10 @@
-##Run time Dependency
+# UserAuth Microservice
+
+This project lists runtime and development dependencies for a Fastify-based authentication service.
+
+## Runtime Dependencies
+
+```json
 {
   "dependencies": {
     // ── Fastify core ───────────────
@@ -25,8 +31,11 @@
     "@opentelemetry/instrumentation-fastify": "^0.50.0"
   }
 }
+```
 
-##Dev Dependency
+## Development Dependencies
+
+```json
 {
   "devDependencies": {
     // ── TypeScript tool-chain ───────
@@ -55,5 +64,5 @@
     "lint-staged": "^15.2.0"
   }
 }
-
+```
 
