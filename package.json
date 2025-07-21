@@ -1,0 +1,39 @@
+{
+  "name": "user-auth-micro-service",
+  "version": "1.0.0",
+  "description": "microservice built for authentication. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maniR1990/userAuthMicroservice.git"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "microservice"
+  ],
+  "author": "manikandan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maniR1990/userAuthMicroservice/issues"
+  },
+  "homepage": "https://github.com/maniR1990/userAuthMicroservice#readme",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/jwt": "^9.1.0",
+    "@fastify/rate-limit": "^10.3.0",
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/instrumentation-fastify": "^0.48.0",
+    "@opentelemetry/sdk-node": "^0.203.0",
+    "@prisma/client": "^6.12.0",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.0",
+    "fastify": "^5.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "redis": "^5.6.0",
+    "zod": "^4.0.5"
+  }
+}
